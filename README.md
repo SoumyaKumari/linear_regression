@@ -4,4 +4,11 @@ Here, I have taken predefined inputs of x and y in array format and plotted grap
 I've also shown how does prediction works for a single point if you specify value of x
 Packages to install -
  1. numpy
- 2. pyplotlib
+ 2. matplotlib
+You can also directly import a csv file. Just write -  
+ import pandas as pd
+ data = pd.read_csv('filename.csv')
+ x = data.iloc[:,0]
+ y = data.iloc[:,1]
+ x = np.array(x)
+ y = np.array(y)
